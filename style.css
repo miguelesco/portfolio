@@ -1,6 +1,8 @@
 body {
-  font-family: 'Inter';font-size: 22px;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -10,8 +12,4 @@ header {
 
 .welcome {
   font-weight: 600;
-}
-
-
-@media screen and (max-width: 500px) {
 }
