@@ -1,14 +1,15 @@
 body {
-    font-family: 'Inter';font-size: 22px;
+  font-family: 'Inter';font-size: 22px;
 }
-header  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
 }
+
 .welcome {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 
