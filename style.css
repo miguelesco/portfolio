@@ -13,16 +13,17 @@ body {
 .welcome {
   font-weight: 600;
   text-decoration: none;
-  color: black;
+  color: #28352F;
 }
 
 #headline {
   background-image: url('./assets/header-illsutration-mobile.svg');
-  height: 100vh;
+  height: 94vh;
   width: 97vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .titleContainer h1 {
@@ -45,9 +46,19 @@ body {
 .headlineDescription p {
   line-height: 28px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
   color: #172b4d;
   width: 90%;
   margin: auto;
+  margin-bottom: 40px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.socialLinks a {
+  margin-right: 20px;
 }
