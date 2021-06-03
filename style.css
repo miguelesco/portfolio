@@ -62,3 +62,105 @@ body {
 .socialLinks a {
   margin-right: 20px;
 }
+
+#works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#works .arrowBtn {
+    width: 42px;
+    border: 1px solid #DFE1E6;
+    border-radius: 50px;
+    background-color: white;
+    color: #172B4D;
+    font-size: 35px;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+}
+#works .arrowBtn:hover {
+  outline: none;
+  color: rgb(16, 185, 81);
+  
+}
+
+.blueTitleText {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.divider {
+  background-color: rgb(16, 185, 81);
+  width: 15%;
+  border-radius: 20px;
+  height: 6px;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr 1fr;
+  height: 474px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.grid-container .projectImage {
+  background-color: #EBF0EE;
+  border-top-left-radius: 8px;
+  border-top-Right-radius: 8px;
+}
+
+.grid-container .projectTitle p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #3A4A42;
+}
+
+.grid-container .projectCategories {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 21%; 
+  margin: auto;
+}
+
+.grid-container .projectCategories button {
+    margin: 5px;
+    background-color: #EBF0EE;
+    outline: none;
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 8px, 12px, 8px, 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3A4A42;
+}
+
+.grid-container .seeProjectContainer {
+  margin: auto;
+}
+
+.seeProjectBtn {
+  background-color: rgb(16, 185, 81);
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  outline: none;
+  border-color: transparent;
+}
+
+.seeProjectBtn:hover {
+  background-color: #172B4D;
+}
