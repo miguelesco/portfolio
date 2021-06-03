@@ -15,3 +15,39 @@ body {
   text-decoration: none;
   color: black;
 }
+
+#headline {
+  background-image: url('./assets/header-illsutration-mobile.svg');
+  height: 100vh;
+  width: 97vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleContainer h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.titleContainer h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 15px;
+  color: rgb(16, 185, 81);
+}
+
+.headlineDescription p {
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #172b4d;
+  width: 90%;
+  margin: auto;
+}
