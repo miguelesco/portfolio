@@ -1,6 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
+  margin: 0;
 }
 
 .navbar {
@@ -106,6 +107,7 @@ body {
   display: grid;
   margin: auto;
   grid-row-gap: 40px;
+  padding-left: 0;
 }
 
 #project-card {
@@ -144,11 +146,14 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin: auto;
+  list-style-type: none;
+  padding-left: 0;
 }
 
-#project-card .projectCategories button {
+#project-card .projectCategories li {
     margin: 5px;
     height: 20px;
+    padding: 5px;
     background-color: #EBF0EE;
     outline: none;
     border-radius: 4px;
@@ -182,6 +187,42 @@ body {
 
 .seeProjectBtn:hover {
   background-color: #172B4D;
+}
+
+.bioIntroduction {
+  background-image: url('./assets/illustration-about.svg'), url('./assets/2ilustation.svg');
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+}
+
+.aboutme {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #172B4D;
+}
+
+.aboutmeDescription {
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 19px;
+  text-align: center;
+  color: #172b4d;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.resumeBtn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -46px;
 }
 
 #lang-card {
