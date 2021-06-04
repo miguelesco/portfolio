@@ -110,7 +110,7 @@ body {
   padding-left: 0;
 }
 
-#project-card {
+.project-card {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -124,7 +124,7 @@ body {
   border-width: 5px;
 }
 
-#project-card .projectImage {
+.project-card .projectImage {
   flex: 1 0 35%;
   background-color: #ebf0ee;
   border-top-left-radius: 8px;
@@ -165,7 +165,7 @@ body {
   color: #3a4a42;
 }
 
-#project-card .seeProjectContainer {
+.project-card .seeProjectContainer {
   align-items: center;
   flex: 1 0 15%;
   display: flex;
@@ -223,7 +223,11 @@ body {
   top: -55px;
 }
 
-#lang-card {
+.blue {
+  color: #344563;
+}
+
+.lang-card {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
