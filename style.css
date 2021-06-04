@@ -1,7 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
-  margin: 0;
+  margin: auto;
 }
 
 .navbar {
@@ -131,7 +131,7 @@ body {
   border-top-Right-radius: 8px;
 }
 
-#project-card .projectTitle p {
+.cardTitle {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
@@ -140,7 +140,7 @@ body {
   margin-bottom: 0;
 }
 
-#project-card .projectCategories {
+.projectCategories {
   flex: 1 0 12%;
   display: flex;
   flex-wrap: wrap;
@@ -150,7 +150,7 @@ body {
   padding-left: 0;
 }
 
-#project-card .projectCategories li {
+.projectCategories li {
     margin: 5px;
     height: 20px;
     padding: 5px;
@@ -195,7 +195,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 
 }
 
@@ -222,7 +222,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -46px;
+  top: -55px;
 }
 
 #lang-card {
@@ -232,22 +232,45 @@ body {
   flex-direction: column;
   height: 352px;
   width: 100%;
-  background-color: #C1C7D0;
+  background-color: #EBF0EE;
   margin: auto;
-  flex: -1;
   border-radius: 8px;
   border-color: #28352f;
   border-width: 5px;
   align-items: center;
+  justify-content: center;
 }
 
 .lang-images-container {
-  background-color: #EBF0EE;
+  flex: 1 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang-images-container {
+  flex: 1 0 20%;
+}
+
+.lang-images-container span {
+  background-color: white;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bio-card-tags {
+  flex: 1 0 25%;
+  align-content: center;
+  justify-content: center;
+}
+
+.bio-card-tags li {
+  background-color: white;
+  color: rgb(16, 185, 81);
+  padding: 12px;
+  text-transform: capitalize;
 }
 
