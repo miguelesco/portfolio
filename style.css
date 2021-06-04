@@ -70,20 +70,20 @@ body {
 }
 
 #works .arrowBtn {
-    width: 42px;
-    border: 1px solid #DFE1E6;
-    border-radius: 50px;
-    background-color: white;
-    color: #172B4D;
-    font-size: 35px;
-    cursor: pointer;
-    outline: none;
-    margin: auto;
+  width: 42px;
+  border: 1px solid #dfe1e6;
+  border-radius: 50px;
+  background-color: white;
+  color: #172b4d;
+  font-size: 35px;
+  cursor: pointer;
+  outline: none;
+  margin: auto;
 }
+
 #works .arrowBtn:hover {
   outline: none;
   color: rgb(16, 185, 81);
-  
 }
 
 .blueTitleText {
@@ -126,9 +126,9 @@ body {
 
 #project-card .projectImage {
   flex: 1 0 35%;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   border-top-left-radius: 8px;
-  border-top-Right-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .cardTitle {
@@ -136,7 +136,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  color: #3A4A42;
+  color: #3a4a42;
   margin-bottom: 0;
 }
 
@@ -151,19 +151,18 @@ body {
 }
 
 .projectCategories li {
-    margin: 5px;
-    height: 20px;
-    padding: 5px;
-    background-color: #EBF0EE;
-    outline: none;
-    border-radius: 4px;
-    border-color: transparent;
-    padding: 8px, 12px, 8px, 12px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    color: #3A4A42;
+  margin: 5px;
+  height: 20px;
+  padding: 5px;
+  background-color: #ebf0ee;
+  outline: none;
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
 }
 
 #project-card .seeProjectContainer {
@@ -186,7 +185,7 @@ body {
 }
 
 .seeProjectBtn:hover {
-  background-color: #172B4D;
+  background-color: #172b4d;
 }
 
 .bioIntroduction {
@@ -196,7 +195,6 @@ body {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 45px;
-
 }
 
 .aboutme {
@@ -204,7 +202,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 32px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .aboutmeDescription {
@@ -232,7 +230,7 @@ body {
   flex-direction: column;
   height: 352px;
   width: 100%;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   margin: auto;
   border-radius: 8px;
   border-color: #28352f;
@@ -242,13 +240,10 @@ body {
 }
 
 .lang-images-container {
-  flex: 1 0 40%;
+  flex: 1 0 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.lang-images-container {
-  flex: 1 0 20%;
 }
 
 .lang-images-container span {
@@ -273,4 +268,3 @@ body {
   padding: 12px;
   text-transform: capitalize;
 }
-
