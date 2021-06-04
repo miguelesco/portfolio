@@ -7,15 +7,19 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <header>
         <nav class="navbar">
             <a href="/" class="welcome">Welcome</a>
             <img width="30" height="30" src="./assets/menuIcon.svg" alt="menu">
         </nav>
     </header>
+
     <main>
+
         <section id="headline">
             <article class="titleContainer">
                 <h1>Hey there. i'm Miguelangel</h1>
@@ -44,6 +48,122 @@
                 </a>
             </div>
         </section>
+
+        <section id="works">
+            <button class="arrowBtn " type="button"><i class="fa fa-angle-down"></i></button>
+            <h2 class="blueTitleText">My Recent <br> Works </h2>
+            <div class="divider"></div>
+
+            <ul class="grid-card-container">
+
+                <li class="project-card" >
+                    <div class="projectImage">
+                        
+                    </div>
+                    <article>
+                        <h4 class="cardTitle">Multi-Post Stories Gain+Glory</h4>
+                    </article>
+                    <ul class="projectCategories">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>Javascript</li>
+                        <li>html</li>
+                    </ul>
+                    <div class="seeProjectContainer">
+                        <button type="button" class="seeProjectBtn">See project</button>
+                    </div>
+                </li>
+                
+                <li class="project-card" >
+                    <div class="projectImage">
+                        
+                    </div>
+                    <article>
+                        <h4 class="cardTitle">Multi-Post Stories Gain+Glory</h4>
+                    </article>
+                    <ul class="projectCategories">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>Javascript</li>
+                        <li>html</li>
+                    </ul>
+                    <div class="seeProjectContainer">
+                        <button type="button" class="seeProjectBtn">See project</button>
+                    </div>
+                </li>
+                
+            </ul>
+
+        </section>
+
+        <section id="bio">
+            <article class="bioIntroduction">
+                <h3 class="aboutme">About me</h3>
+                <p class="aboutmeDescription "> 
+                    I can help you build a product , feature or website Look 
+                    through some of my work and experience! If you like what 
+                    you see and have a project you need coded, don’t hestiate 
+                    to contact me.
+                </p>
+            </article>
+            <div class="seeProjectContainer resumeBtn">
+                <button type="button" class="seeProjectBtn">Get My Resume</button>
+            </div>
+
+            <ul id="tech-card" class="grid-card-container">
+                <li class="lang-card">
+                    <div class="lang-images-container">
+                        <span>
+                            <img src="./assets/icons/lang.svg" alt="lang">
+                        </span>
+                    </div>
+                    <article >
+                        <p class="cardTitle blue" >Languages</p>
+                    </article>
+                    <ul class="projectCategories bio-card-tags">
+                        <li>Javascript</li>
+                        <li>Ruby</li>
+                        <li>html</li>
+                        <li>css</li>
+                    </ul>
+                </li>
+                <li class="lang-card">
+                    <div class="lang-images-container">
+                        <span>
+                            <img src="./assets/icons/frameworks.svg" alt="lang">
+                        </span>
+                    </div>
+                    <article >
+                        <p class="cardTitle blue" >Frameworks</p>
+                    </article>
+                    <ul class="projectCategories bio-card-tags">
+                        <li>Boostrap</li>
+                        <li>Ruby on rails</li>
+                        <li>Rspec</li>
+                        <li>Copybara</li>
+                        <li>Selenium</li>
+                    </ul>
+                </li>
+                <li class="lang-card">
+                    <div class="lang-images-container">
+                        <span>
+                            <img src="./assets/icons/skills.svg" alt="lang">
+                        </span>
+                    </div>
+                    <article >
+                        <p class="cardTitle blue">Skills</p>
+                    </article>
+                    <ul class="projectCategories bio-card-tags">
+                        <li>Codekit</li>
+                        <li>Github</li>
+                        <li>Codepen</li>
+                        <li>Gitlab</li>
+                        <li>Terminal</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
     </main>
     
 </body>

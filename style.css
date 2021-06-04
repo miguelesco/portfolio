@@ -1,6 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
+  margin: auto;
 }
 
 .navbar {
@@ -19,7 +20,6 @@ body {
 #headline {
   background-image: url('./assets/header-illsutration-mobile.svg');
   height: 94vh;
-  width: 97vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,4 +61,214 @@ body {
 
 .socialLinks a {
   margin-right: 20px;
+}
+
+#works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#works .arrowBtn {
+  width: 42px;
+  border: 1px solid #dfe1e6;
+  border-radius: 50px;
+  background-color: white;
+  color: #172b4d;
+  font-size: 35px;
+  cursor: pointer;
+  outline: none;
+  margin: auto;
+}
+
+#works .arrowBtn:hover {
+  outline: none;
+  color: rgb(16, 185, 81);
+}
+
+.blueTitleText {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.divider {
+  background-color: rgb(16, 185, 81);
+  width: 15%;
+  border-radius: 20px;
+  height: 6px;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+.grid-card-container {
+  width: 90%;
+  display: grid;
+  margin: auto;
+  grid-row-gap: 40px;
+  padding-left: 0;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: column;
+  height: 474px;
+  width: 100%;
+  margin: auto;
+  flex: -1;
+  border-radius: 8px;
+  border-color: #28352f;
+  border-width: 5px;
+}
+
+.project-card .projectImage {
+  flex: 1 0 35%;
+  background-color: #ebf0ee;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.cardTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #3a4a42;
+  margin-bottom: 0;
+}
+
+.projectCategories {
+  flex: 1 0 12%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.projectCategories li {
+  margin: 5px;
+  height: 20px;
+  padding: 5px;
+  background-color: #ebf0ee;
+  outline: none;
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.project-card .seeProjectContainer {
+  align-items: center;
+  flex: 1 0 15%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.seeProjectBtn {
+  background-color: rgb(16, 185, 81);
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  outline: none;
+  border-color: transparent;
+}
+
+.seeProjectBtn:hover {
+  background-color: #172b4d;
+}
+
+.bioIntroduction {
+  background-image: url('./assets/illustration-about.svg'), url('./assets/2ilustation.svg');
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+.aboutme {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #172b4d;
+}
+
+.aboutmeDescription {
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 19px;
+  text-align: center;
+  color: #172b4d;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.resumeBtn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -55px;
+}
+
+.blue {
+  color: #344563;
+}
+
+.lang-card {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: column;
+  height: 352px;
+  width: 100%;
+  background-color: #ebf0ee;
+  margin: auto;
+  border-radius: 8px;
+  border-color: #28352f;
+  border-width: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-images-container {
+  flex: 1 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-images-container span {
+  background-color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-card-tags {
+  flex: 1 0 25%;
+  align-content: center;
+  justify-content: center;
+}
+
+.bio-card-tags li {
+  background-color: white;
+  color: rgb(16, 185, 81);
+  padding: 12px;
+  text-transform: capitalize;
 }
