@@ -54,6 +54,18 @@ body {
   margin-bottom: 40px;
 }
 
+.headlineDescription h3 {
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #172b4d;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
 .socialLinks {
   display: flex;
   justify-content: center;
@@ -271,4 +283,30 @@ body {
   color: rgb(16, 185, 81);
   padding: 12px;
   text-transform: capitalize;
+}
+
+
+
+form {
+  border: 1px solid #c6c7cc;
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  
+}
+
+input {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+textarea {
+  width: 100%;
 }
