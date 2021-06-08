@@ -176,15 +176,15 @@ body {
   color: #3a4a42;
 }
 
+.seeProjectContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .project-card .seeProjectContainer {
   align-items: center;
   flex: 1 0 15%;
   margin: auto;
-}
-
-.seeProjectContainer {
-  display: flex;
-  justify-content: center;
 }
 
 .seeProjectBtn {
@@ -304,16 +304,15 @@ input {
   padding: 15px;
   width: 100%;
   margin-bottom: 24px;
-  color:#6b778c;
-  border: 1px solid #D0D9D4;
+  color: #6b778c;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
 }
 
 input:focus:invalid {
-  box-shadow: 0 0 5px 1px red; 
+  box-shadow: 0 0 5px 1px red;
   outline: none;
 }
-
 
 input:focus:valid {
   box-shadow: 0 0 5px 1px green;
@@ -327,17 +326,18 @@ textarea {
   width: 100%;
   padding: 12px;
   height: 114px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
 }
 
 .bottom-email {
   margin-bottom: 80px;
 }
+
 .bottom-email p {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
-  color: #42526E;
+  color: #42526e;
   line-height: 32px;
 }
