@@ -288,9 +288,6 @@ body {
 
 
 form {
-  border: 1px solid #c6c7cc;
-  border-radius: 5px;
-  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
   width: 90%;
   margin: auto;
@@ -298,15 +295,25 @@ form {
 
 fieldset {
   border: 0;
-  margin: 0;
-  
 }
 
 input {
+  box-sizing: border-box;
+  padding: 15px;
   width: 100%;
   margin-bottom: 24px;
+  color:#6b778c;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
 }
 
 textarea {
+  color: #091e42;
+  font-weight: 400;
+  box-sizing: border-box;
   width: 100%;
+  padding: 12px;
+  height: 114px;
+  border: 1px solid #60C095;
+  border-radius: 4px;
 }
