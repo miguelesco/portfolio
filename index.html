@@ -30,23 +30,33 @@
                     If you can dream it, I can code it, I am a front end developer who specializes in mobile and web apps, capable of developing your project or idea, if you require assistance, do not hesitate to contact me
                 </p>
             </article>
-            <div class="socialLinks">
-                <a href="https://twitter.com/miguelescorched">
-                    <img src="./assets/icons/twitter.svg" alt="twitter">
-                </a>
-                <a href="https://www.linkedin.com/in/miguelangel-escorche-delgado-9a2956163/">
-                    <img src="./assets/icons/linkedin.svg" alt="twitter">
-                </a>
-                <a href="https://miguelangelescorche.medium.com">
-                    <img src="./assets/icons/medium.svg" alt="twitter">
-                </a>
-                <a href="https://github.com/miguelesco">
-                    <img src="./assets/icons/github.svg" alt="twitter">
-                </a>
-                <a href="">
-                    <img src="./assets/icons/angellist.svg" alt="twitter">
-                </a>
-            </div>
+            <ul class="socialLinks">
+                <li>
+                    <a href="https://twitter.com/miguelescorched">
+                        <img src="./assets/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/miguelangel-escorche-delgado-9a2956163/">
+                        <img src="./assets/icons/linkedin.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://miguelangelescorche.medium.com">
+                        <img src="./assets/icons/medium.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/miguelesco">
+                        <img src="./assets/icons/github.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/icons/angellist.svg" alt="twitter">
+                    </a>
+                </li>
+            </ul>
         </section>
 
         <section id="works">
@@ -169,14 +179,63 @@
                 I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.
             </h3>
-            <form>
+            <form action="https://formspree.io/f/xknkbwva" method="POST" >
                 <fieldset>
-                    <input type="text" name="name" id="fullname" required maxlength="30" placeholder="Full name">
-                    <input type="email" name="email" id="email" required placeholder="Email address"> 
+                    <input 
+                    oninvalid="setCustomValidity('Please enter your full name')"
+                    type="text" 
+                    name="name" 
+                    id="fullname" 
+                    required 
+                    maxlength="30" 
+                    placeholder="Full name"
+                    >
+                    <input 
+                    type="email" 
+                    name="_replyto" 
+                    oninvalid="setCustomValidity('Please enter a valid email')"
+                    id="email" 
+                    required 
+                    placeholder="Email address"
+                    > 
                     <textarea placeholder="Enter text here" required maxlength="500"></textarea>
-                </fieldset> 
-                <button class="seeProjectBtn" type="submit">Get in touch</button>
+                </fieldset>
+                <div class="seeProjectContainer">
+                    <button class="seeProjectBtn" type="submit">Get in touch</button>
+                </div>
             </form>
+
+            <ul class="socialLinks">
+                <li>
+                    <a href="https://twitter.com/miguelescorched">
+                        <img src="./assets/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/miguelangel-escorche-delgado-9a2956163/">
+                        <img src="./assets/icons/linkedin.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://miguelangelescorche.medium.com">
+                        <img src="./assets/icons/medium.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/miguelesco">
+                        <img src="./assets/icons/github.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/icons/angellist.svg" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+            <span class="bottom-email">
+                <p >miguelangelescorche@gmail.com</p>
+            </span>
+
         </section>
 
     </main>

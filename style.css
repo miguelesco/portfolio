@@ -69,10 +69,9 @@ body {
 .socialLinks {
   display: flex;
   justify-content: center;
-}
-
-.socialLinks a {
-  margin-right: 20px;
+  list-style: none;
+  padding-left: 0;
+  gap: 16px;
 }
 
 #works {
@@ -180,9 +179,12 @@ body {
 .project-card .seeProjectContainer {
   align-items: center;
   flex: 1 0 15%;
+  margin: auto;
+}
+
+.seeProjectContainer {
   display: flex;
   justify-content: center;
-  margin: auto;
 }
 
 .seeProjectBtn {
@@ -285,16 +287,16 @@ body {
   text-transform: capitalize;
 }
 
-
-
 form {
   overflow: hidden;
-  width: 90%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 fieldset {
   border: 0;
+  width: 90%;
 }
 
 input {
@@ -307,6 +309,17 @@ input {
   border-radius: 4px;
 }
 
+input:focus:invalid {
+  box-shadow: 0 0 5px 1px red; 
+  outline: none;
+}
+
+
+input:focus:valid {
+  box-shadow: 0 0 5px 1px green;
+  outline: none;
+}
+
 textarea {
   color: #091e42;
   font-weight: 400;
@@ -316,4 +329,15 @@ textarea {
   height: 114px;
   border: 1px solid #60C095;
   border-radius: 4px;
+}
+
+.bottom-email {
+  margin-bottom: 80px;
+}
+.bottom-email p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #42526E;
+  line-height: 32px;
 }
