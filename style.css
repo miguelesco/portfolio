@@ -457,7 +457,6 @@ textarea {
 
   #contact h3 {
     flex: 50%;
-    text-align: justify;
     font-size: 30px;
   }
 
@@ -488,5 +487,9 @@ textarea {
 
   .bottom-email {
     display: none;
+  }
+
+  footer {
+    border-top: 2px solid #DFE1E6;
   }
 }
