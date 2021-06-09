@@ -370,7 +370,7 @@ textarea {
   line-height: 32px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 992px) {
   #headline {
     height: 145vh;
     background-image: url('./assets/header-llustration.svg');
