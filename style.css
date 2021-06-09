@@ -98,6 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .arrowBtn {
@@ -123,6 +124,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
+  width: 60%;
 }
 
 .divider {
@@ -157,7 +159,7 @@ body {
 }
 
 .project-card .projectImage {
-  flex: 1 0 35%;
+  flex: 1 0 38%;
   background-color: #ebf0ee;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -177,6 +179,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin: auto;
   list-style-type: none;
   padding-left: 0;
@@ -320,6 +323,10 @@ fieldset {
   width: 90%;
 }
 
+.nameInputs {
+  display: none;
+}
+
 input {
   box-sizing: border-box;
   padding: 15px;
@@ -363,7 +370,7 @@ textarea {
   line-height: 32px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 750px) {
   #headline {
     background-image: url('./assets/header-llustration.svg');
   }
@@ -403,6 +410,63 @@ textarea {
   }
   .arrowBtn {
     margin-top: 60px;
+  }
+  .divider {
+    display: none;
+  }
+  .blueTitleText {
+    width: 100%;
+  }
+  .grid-card-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+  .project-card .projectImage {
+    flex: 1 0 45%;
+  }
+  .aboutmeDescription {
+    width: 60%;
+  }
+  #contact {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 25vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:  auto;
+    margin-top: 20vh;
+    background-image: url('./assets/ilustration-left-contact.svg'), url('./assets/ilustration-contact.svg'), url('./assets/ilustration-right-contact.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left bottom, 25% 65%, right;
+  }
+  #contact h3 {
+    flex: 50%;
+    text-align: justify;
+    font-size: 30px;
+  }
+  #contact form {
+    flex: 50%
+  }
+  .seeProjectContainer {
+    padding-left: 16.5px;
+  }
+  form {
+    align-items: flex-start;
+  }
+  .fullname {
+    display: none;
+  }
+  .nameInputs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nameInputs input{
+    flex: 50%;
+  }
+  .bottom-email {
+    display: none;
   }
 }
 

@@ -66,11 +66,29 @@
         </section>
 
         <section id="works">
-            <h2 class="blueTitleText">My Recent <br> Works </h2>
+            <h2 class="blueTitleText">My Recent Works </h2>
             <div class="divider"></div>
 
             <ul class="grid-card-container">
 
+                <li class="project-card" >
+                    <div class="projectImage">
+                        
+                    </div>
+                    <article>
+                        <h4 class="cardTitle">Multi-Post Stories Gain+Glory</h4>
+                    </article>
+                    <ul class="projectCategories">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>Javascript</li>
+                        <li>html</li>
+                    </ul>
+                    <div class="seeProjectContainer">
+                        <button type="button" class="seeProjectBtn">See project</button>
+                    </div>
+                </li>
+                
                 <li class="project-card" >
                     <div class="projectImage">
                         
@@ -186,7 +204,29 @@
             </h3>
             <form action="https://formspree.io/f/xknkbwva" method="POST" >
                 <fieldset>
+                    <div class="nameInputs">
+                        <input 
+                        oninvalid="setCustomValidity('Please enter your First name')"
+                        type="text" 
+                        name="firstName" 
+                        id="firstName" 
+                        required 
+                        maxlength="30" 
+                        placeholder="First name"
+                        >
+                        <input 
+                        oninvalid="setCustomValidity('Please enter your Last name')"
+                        type="text" 
+                        name="lastName" 
+                        id="lastName" 
+                        required 
+                        maxlength="30" 
+                        placeholder="Last name"
+                        >
+                    </div>
+
                     <input 
+                    class="fullname"
                     oninvalid="setCustomValidity('Please enter your full name')"
                     type="text" 
                     name="name" 
@@ -210,6 +250,9 @@
                 </div>
             </form>
 
+        </section>
+
+        <footer>
             <ul class="socialLinks">
                 <li>
                     <a href="https://twitter.com/miguelescorched">
@@ -240,8 +283,7 @@
             <div class="bottom-email">
                 <p >miguelangelescorche@gmail.com</p>
             </div>
-
-        </section>
+        </footer>
 
     </main>
     
