@@ -14,58 +14,81 @@
     <header>
         <nav class="navbar">
             <a href="/" class="welcome">Welcome</a>
-            <img width="30" height="30" src="./assets/menuIcon.svg" alt="menu">
+            <img class="menuIcon" width="30" height="30" src="./assets/menuIcon.svg" alt="menu">
+            <a href="#works" class="topNavigation">Portfolio</a>
+            <a href="#bio" class="topNavigation">About</a>
+            <a href="#contact" class="topNavigation">Contact</a>
         </nav>
     </header>
 
     <main>
 
         <section id="headline">
-            <article class="titleContainer">
-                <h1>Hey there. i'm Miguelangel</h1>
-                <h3>I'm a software <br> developer </h3>
-            </article>
-            <article class="headlineDescription">
-                <p> 
-                    If you can dream it, I can code it, I am a front end developer who specializes in mobile and web apps, capable of developing your project or idea, if you require assistance, do not hesitate to contact me
-                </p>
-            </article>
-            <ul class="socialLinks">
-                <li>
-                    <a href="https://twitter.com/miguelescorched">
-                        <img src="./assets/icons/twitter.svg" alt="twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/miguelangel-escorche-delgado-9a2956163/">
-                        <img src="./assets/icons/linkedin.svg" alt="twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://miguelangelescorche.medium.com">
-                        <img src="./assets/icons/medium.svg" alt="twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/miguelesco">
-                        <img src="./assets/icons/github.svg" alt="twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./assets/icons/angellist.svg" alt="twitter">
-                    </a>
-                </li>
-            </ul>
+            <div class="headlineContainer">
+                <article class="titleContainer">
+                    <h1>Hey there. i'm Miguelangel</h1>
+                    <h3>I'm a software developer </h3>
+                </article>
+                <article class="headlineDescription">
+                    <p> 
+                        If you can dream it, I can code it, I am a front end developer who specializes in mobile and web apps, capable of developing your project or idea, if you require assistance, do not hesitate to contact me
+                    </p>
+                </article>
+                <ul class="socialLinks">
+                    <li>
+                        <a href="https://twitter.com/miguelescorched">
+                            <img src="./assets/icons/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/miguelangel-escorche-delgado-9a2956163/">
+                            <img src="./assets/icons/linkedin.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://miguelangelescorche.medium.com">
+                            <img src="./assets/icons/medium.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/miguelesco">
+                            <img src="./assets/icons/github.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./assets/icons/angellist.svg" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+                <button class="arrowBtn " type="button"><i class="fa fa-angle-down"></i></button>
+            </div>
         </section>
 
         <section id="works">
-            <button class="arrowBtn " type="button"><i class="fa fa-angle-down"></i></button>
-            <h2 class="blueTitleText">My Recent <br> Works </h2>
+            <h2 class="blueTitleText">My Recent Works </h2>
             <div class="divider"></div>
 
             <ul class="grid-card-container">
 
+                <li class="project-card" >
+                    <div class="projectImage">
+                        
+                    </div>
+                    <article>
+                        <h4 class="cardTitle">Multi-Post Stories Gain+Glory</h4>
+                    </article>
+                    <ul class="projectCategories">
+                        <li>Ruby on rails</li>
+                        <li>css</li>
+                        <li>Javascript</li>
+                        <li>html</li>
+                    </ul>
+                    <div class="seeProjectContainer">
+                        <button type="button" class="seeProjectBtn">See project</button>
+                    </div>
+                </li>
+                
                 <li class="project-card" >
                     <div class="projectImage">
                         
@@ -181,7 +204,29 @@
             </h3>
             <form action="https://formspree.io/f/xknkbwva" method="POST" >
                 <fieldset>
+                    <div class="nameInputs">
+                        <input 
+                        oninvalid="setCustomValidity('Please enter your First name')"
+                        type="text" 
+                        name="firstName" 
+                        id="firstName" 
+                        required 
+                        maxlength="30" 
+                        placeholder="First name"
+                        >
+                        <input 
+                        oninvalid="setCustomValidity('Please enter your Last name')"
+                        type="text" 
+                        name="lastName" 
+                        id="lastName" 
+                        required 
+                        maxlength="30" 
+                        placeholder="Last name"
+                        >
+                    </div>
+
                     <input 
+                    class="fullname"
                     oninvalid="setCustomValidity('Please enter your full name')"
                     type="text" 
                     name="name" 
@@ -205,6 +250,9 @@
                 </div>
             </form>
 
+        </section>
+
+        <footer>
             <ul class="socialLinks">
                 <li>
                     <a href="https://twitter.com/miguelescorched">
@@ -235,8 +283,7 @@
             <div class="bottom-email">
                 <p >miguelangelescorche@gmail.com</p>
             </div>
-
-        </section>
+        </footer>
 
     </main>
     

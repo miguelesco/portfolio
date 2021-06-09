@@ -17,13 +17,32 @@ body {
   color: #28352f;
 }
 
+.topNavigation {
+  display: none;
+}
+
 #headline {
   background-image: url('./assets/header-illsutration-mobile.svg');
-  height: 94vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.headlineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .titleContainer h1 {
@@ -41,6 +60,7 @@ body {
   font-size: 40px;
   margin-top: 15px;
   color: rgb(16, 185, 81);
+  width: 70%;
 }
 
 .headlineDescription p {
@@ -78,9 +98,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-#works .arrowBtn {
+.arrowBtn {
   width: 42px;
   border: 1px solid #dfe1e6;
   border-radius: 50px;
@@ -89,10 +110,11 @@ body {
   font-size: 35px;
   cursor: pointer;
   outline: none;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
-#works .arrowBtn:hover {
+.arrowBtn:hover {
   outline: none;
   color: rgb(16, 185, 81);
 }
@@ -102,6 +124,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
+  width: 60%;
 }
 
 .divider {
@@ -136,7 +159,7 @@ body {
 }
 
 .project-card .projectImage {
-  flex: 1 0 35%;
+  flex: 1 0 38%;
   background-color: #ebf0ee;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -156,6 +179,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin: auto;
   list-style-type: none;
   padding-left: 0;
@@ -299,6 +323,10 @@ fieldset {
   width: 90%;
 }
 
+.nameInputs {
+  display: none;
+}
+
 input {
   box-sizing: border-box;
   padding: 15px;
@@ -340,4 +368,128 @@ textarea {
   text-align: center;
   color: #42526e;
   line-height: 32px;
+}
+
+@media screen and (min-width: 992px) {
+  #headline {
+    height: 145vh;
+    background-image: url('./assets/header-llustration.svg');
+  }
+
+  .navbar {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .topNavigation {
+    display: block;
+    text-decoration: none;
+    color: #344563;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .welcome {
+    display: none;
+  }
+
+  .titleContainer h1 {
+    font-size: 48px;
+  }
+
+  .titleContainer h3 {
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .headlineDescription p {
+    width: 65%;
+  }
+
+  .headlineContainer {
+    margin-top: 0;
+    margin-bottom: 200px;
+  }
+
+  .arrowBtn {
+    margin-top: 60px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .blueTitleText {
+    width: 100%;
+  }
+
+  .grid-card-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .project-card .projectImage {
+    flex: 1 0 45%;
+  }
+
+  .aboutmeDescription {
+    width: 60%;
+  }
+
+  #contact {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 25vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20vh;
+    background-image: url('./assets/ilustration-left-contact.svg'), url('./assets/ilustration-contact.svg'), url('./assets/ilustration-right-contact.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left bottom, 25% 65%, right;
+  }
+
+  #contact h3 {
+    flex: 50%;
+    font-size: 30px;
+  }
+
+  form {
+    align-items: flex-start;
+  }
+
+  #contact form {
+    flex: 50%;
+  }
+
+  .seeProjectContainer {
+    padding-left: 16.5px;
+  }
+
+  .fullname {
+    display: none;
+  }
+
+  .nameInputs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nameInputs input {
+    flex: 50%;
+  }
+
+  .bottom-email {
+    display: none;
+  }
+
+  footer {
+    border-top: 2px solid #dfe1e6;
+  }
 }
