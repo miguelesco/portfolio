@@ -19,7 +19,7 @@ body {
   animation-name: zoom;
 }
 
-@keyframes zoom{
+@keyframes zoom {
   from {
     transform: scale(2);
     margin-left: 50px;
@@ -29,7 +29,6 @@ body {
     transform: scale(1);
     margin-left: 0;
   }
-
 }
 
 .topNavigation {
@@ -111,6 +110,28 @@ body {
 
 .socialLinks li {
   transition: all 0.3s ease-in;
+}
+
+.projectCategories li {
+  margin: 5px;
+  height: 20px;
+  padding: 5px;
+  background-color: #ebf0ee;
+  outline: none;
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.bio-card-tags li {
+  background-color: white;
+  color: rgb(16, 185, 81);
+  padding: 12px;
+  text-transform: capitalize;
 }
 
 .socialLinks li:hover {
@@ -207,21 +228,6 @@ body {
   margin: auto;
   list-style-type: none;
   padding-left: 0;
-}
-
-.projectCategories li {
-  margin: 5px;
-  height: 20px;
-  padding: 5px;
-  background-color: #ebf0ee;
-  outline: none;
-  border-radius: 4px;
-  border-color: transparent;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
 }
 
 .seeProjectContainer {
@@ -327,13 +333,6 @@ body {
   flex: 1 0 25%;
   align-content: center;
   justify-content: center;
-}
-
-.bio-card-tags li {
-  background-color: white;
-  color: rgb(16, 185, 81);
-  padding: 12px;
-  text-transform: capitalize;
 }
 
 form {
