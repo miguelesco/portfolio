@@ -112,6 +112,7 @@ body {
   outline: none;
   margin: 0 auto;
   margin-top: 40px;
+  transition: all 0.5s ease-in;
 }
 
 .arrowBtn:hover {
@@ -220,6 +221,7 @@ body {
   color: white;
   outline: none;
   border-color: transparent;
+  transition: all 0.3s ease-in;
 }
 
 .seeProjectBtn:hover {
@@ -431,6 +433,14 @@ textarea {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 24px;
+  }
+
+  .project-card {
+    transition: all 0.3s ease-in;
+  }
+
+  .project-card:hover {
+    transform: scale(1.2);
   }
 
   .project-card .projectImage {
