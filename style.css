@@ -15,6 +15,21 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #28352f;
+  animation-duration: 1.5s;
+  animation-name: zoom;
+}
+
+@keyframes zoom{
+  from {
+    transform: scale(2);
+    margin-left: 50px;
+  }
+
+  to {
+    transform: scale(1);
+    margin-left: 0;
+  }
+
 }
 
 .topNavigation {
@@ -94,6 +109,14 @@ body {
   gap: 16px;
 }
 
+.socialLinks li {
+  transition: all 0.3s ease-in;
+}
+
+.socialLinks li:hover {
+  transform: scale(1.5);
+}
+
 #works {
   display: flex;
   flex-direction: column;
@@ -112,6 +135,7 @@ body {
   outline: none;
   margin: 0 auto;
   margin-top: 40px;
+  transition: all 0.5s ease-in;
 }
 
 .arrowBtn:hover {
@@ -220,6 +244,7 @@ body {
   color: white;
   outline: none;
   border-color: transparent;
+  transition: all 0.3s ease-in;
 }
 
 .seeProjectBtn:hover {
@@ -431,6 +456,14 @@ textarea {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 24px;
+  }
+
+  .project-card {
+    transition: all 0.3s ease-in;
+  }
+
+  .project-card:hover {
+    transform: scale(1.2);
   }
 
   .project-card .projectImage {
