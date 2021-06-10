@@ -15,6 +15,21 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #28352f;
+  animation-duration: 1.5s;
+  animation-name: zoom;
+}
+
+@keyframes zoom{
+  from {
+    transform: scale(2);
+    margin-left: 50px;
+  }
+
+  to {
+    transform: scale(1);
+    margin-left: 0;
+  }
+
 }
 
 .topNavigation {
@@ -92,6 +107,14 @@ body {
   list-style: none;
   padding-left: 0;
   gap: 16px;
+}
+
+.socialLinks li {
+  transition: all 0.3s ease-in;
+}
+
+.socialLinks li:hover {
+  transform: scale(1.5);
 }
 
 #works {
