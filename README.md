@@ -15,14 +15,16 @@ Additional description about the project and its features.
 - Frameworks
 - Technologies used
     HTML && Css
+## Live Demo
 
+[Live Demo Link](https://miguelesco.github.io/portfolio/)
 ## Getting Started
 
 ### Usage
 
--Open the terminal
--Git clone <repo's link here>
--Open index.html file in the browser
+- Open the terminal
+- Git clone <repo's link here>
+- Open index.html file in the browser
 
 ## Authors
 
