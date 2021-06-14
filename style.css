@@ -15,6 +15,20 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #28352f;
+  animation-duration: 1.5s;
+  animation-name: zoom;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(2);
+    margin-left: 50px;
+  }
+
+  to {
+    transform: scale(1);
+    margin-left: 0;
+  }
 }
 
 .topNavigation {
@@ -94,6 +108,36 @@ body {
   gap: 16px;
 }
 
+.socialLinks li {
+  transition: all 0.3s ease-in;
+}
+
+.projectCategories li {
+  margin: 5px;
+  height: 20px;
+  padding: 5px;
+  background-color: #ebf0ee;
+  outline: none;
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.bio-card-tags li {
+  background-color: white;
+  color: rgb(16, 185, 81);
+  padding: 12px;
+  text-transform: capitalize;
+}
+
+.socialLinks li:hover {
+  transform: scale(1.5);
+}
+
 #works {
   display: flex;
   flex-direction: column;
@@ -112,6 +156,7 @@ body {
   outline: none;
   margin: 0 auto;
   margin-top: 40px;
+  transition: all 0.5s ease-in;
 }
 
 .arrowBtn:hover {
@@ -185,21 +230,6 @@ body {
   padding-left: 0;
 }
 
-.projectCategories li {
-  margin: 5px;
-  height: 20px;
-  padding: 5px;
-  background-color: #ebf0ee;
-  outline: none;
-  border-radius: 4px;
-  border-color: transparent;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-}
-
 .seeProjectContainer {
   display: flex;
   justify-content: center;
@@ -220,6 +250,7 @@ body {
   color: white;
   outline: none;
   border-color: transparent;
+  transition: all 0.3s ease-in;
 }
 
 .seeProjectBtn:hover {
@@ -302,13 +333,6 @@ body {
   flex: 1 0 25%;
   align-content: center;
   justify-content: center;
-}
-
-.bio-card-tags li {
-  background-color: white;
-  color: rgb(16, 185, 81);
-  padding: 12px;
-  text-transform: capitalize;
 }
 
 form {
@@ -431,6 +455,14 @@ textarea {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 24px;
+  }
+
+  .project-card {
+    transition: all 0.3s ease-in;
+  }
+
+  .project-card:hover {
+    transform: scale(1.2);
   }
 
   .project-card .projectImage {
