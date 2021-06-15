@@ -66,15 +66,17 @@ body {
   color: #172b4d;
   margin-top: 0;
   margin-bottom: 0;
+  background-color: white;
 }
 
-.titleContainer h3 {
+.titleContainer h2 {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
   margin-top: 15px;
-  color: rgb(16, 185, 81);
+  color: #098936;
   width: 70%;
+  background-color: white;
 }
 
 .headlineDescription p {
@@ -86,6 +88,7 @@ body {
   width: 90%;
   margin: auto;
   margin-bottom: 40px;
+  background-color: white;
 }
 
 .headlineDescription h3 {
@@ -129,7 +132,7 @@ body {
 
 .bio-card-tags li {
   background-color: white;
-  color: rgb(16, 185, 81);
+  color: #098936;
   padding: 12px;
   text-transform: capitalize;
 }
@@ -242,7 +245,7 @@ body {
 }
 
 .seeProjectBtn {
-  background-color: rgb(16, 185, 81);
+  background-color: #098936;
   padding: 12px;
   border-radius: 4px;
   font-weight: 500;
@@ -272,6 +275,7 @@ body {
   font-weight: 700;
   line-height: 32px;
   color: #172b4d;
+  background-color: white;
 }
 
 .aboutmeDescription {
@@ -283,6 +287,7 @@ body {
   width: 90%;
   margin: auto;
   margin-bottom: 40px;
+  background-color: white;
 }
 
 .resumeBtn {
@@ -425,13 +430,17 @@ textarea {
     font-size: 48px;
   }
 
-  .titleContainer h3 {
+  .titleContainer h2 {
     font-size: 48px;
     width: 100%;
   }
 
   .headlineDescription p {
     width: 65%;
+  }
+
+  .headlineDescription h3 {
+    background-color: white;
   }
 
   .headlineContainer {
