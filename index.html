@@ -22,11 +22,23 @@
     <header>
         <nav class="navbar">
             <a href="/" class="welcome">Welcome</a>
-            <img class="menuIcon" width="30" height="30" src="./assets/menuIcon.svg" alt="menu">
+            <img class="menuIcon" width="30" height="30" src="./assets/menuIcon.svg" id="hamburguerIcon" alt="menu">
             <a href="#works" class="topNavigation">Portfolio</a>
             <a href="#bio" class="topNavigation">About</a>
             <a href="#contact" class="topNavigation">Contact</a>
         </nav>
+
+        <div id="sideBar" class="sidebar">
+            <!-- Modal content -->
+            <div class="sidebar-content">
+                <span class="close-sidebar">&times;</span>
+                <ul>
+                    <li><a href="#works" class="sidebarNavigation" >Portfolio</a></li>
+                    <li><a href="#bio"  class="sidebarNavigation">About</a></li>
+                    <li><a href="#contact" class="sidebarNavigation">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -295,6 +307,6 @@
         </footer>
 
     </main>
-    
+    <script src="./scripts.js"></script>
 </body>
 </html>
