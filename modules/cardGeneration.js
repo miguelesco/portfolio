@@ -52,7 +52,7 @@ const renderCardContent = () => {
     categories.forEach(categorie => cardChild[i].categories.append(createElement('li', categorie, '', '')));
     const liCategories = categories.map(categorie => createElement('li', categorie, '', ''));
     const button = createElement('button', 'See Project', 'seeProjectBtn', '');
-    button.addEventListener('click', () => Popup().open(cardContent, liCategories));
+    button.addEventListener('click', () => Popup.open(cardContent, liCategories));
     cardChild[i].buttonContainer.append(button);
   });
 

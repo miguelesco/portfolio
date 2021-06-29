@@ -1,7 +1,6 @@
+let isInitiated = false;
 
-
-function Popup (){
-  const popup = {
+  const Popup = {
     container: document.querySelector('.projectModal'),
     closeIcon: document.querySelector('.close-projectModal'),
     image: document.querySelector('.image'),
@@ -16,36 +15,37 @@ function Popup (){
 
       const {title, description, imageURL, sourceURL, liveURL, action} = cardContent;
 
-      popup.image.src = imageURL;
-      popup.title.innerHTML = title;
-      categories.forEach(categorie => popup.categoriesContainer.append(categorie));
+      Popup.image.src = imageURL;
+      Popup.title.innerHTML = title;
+      categories.forEach(categorie => Popup.categoriesContainer.append(categorie));
       
-      popup.description.innerHTML = `<p>${description}</p>`;
+      Popup.description.innerHTML = `<p>${description}</p>`;
 
-      popup.sourceURL = sourceURL;
-      popup.liveURL = liveURL;
-      popup.container.style.display = 'flex';
+      Popup.sourceURL = sourceURL;
+      Popup.liveURL = liveURL;
+      Popup.container.style.display = 'flex';
     },
     redirectTo: (to = '') => {
       console.log(to)
       window.open(to , '_blank');
     },
     close: () => {
-      while (popup.categoriesContainer.firstChild) {
-        popup.categoriesContainer.removeChild(popup.categoriesContainer.firstChild);
+      while (Popup.categoriesContainer.firstChild) {
+        Popup.categoriesContainer.removeChild(Popup.categoriesContainer.firstChild);
       }
-      popup.container.style.display = 'none';
-    }
+      Popup.container.style.display = 'none';
+    },
+    init: () => {
+      if (isInitiated) {
+        return;
+      }
+      console.log(Popup.categoriesContainer);
+      Popup.closeIcon.addEventListener('click', Popup.close);
+      Popup.seeLiveBtn.addEventListener('click', () => Popup.redirectTo(Popup.liveURL));
+      Popup.sourceCodeBtn.addEventListener('click', () => Popup.redirectTo(Popup.sourceURL));
+      isInitiated = true;
+    },
   
   };
-
-  popup.closeIcon.addEventListener('click', popup.close);
-
-  popup.seeLiveBtn.addEventListener('click', popup.redirectTo(popup.liveURL));
-  popup.sourceCodeBtn.addEventListener('click', popup.redirectTo(popup.sourceURL));
-
-  return popup;
-}
-
 
 export {Popup};

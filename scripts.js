@@ -6,7 +6,7 @@ import {Popup} from './modules/popup.js';
 const init = () => {
   initSidebar();
   CardsGeneration();
-  Popup();
+  Popup.init();
 };
 
 init();
