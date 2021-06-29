@@ -202,7 +202,7 @@ body {
   border-width: 5px;
 }
 
-.project-card .projectImage {
+.projectImage {
   flex: 1 0 38%;
   background-color: #ebf0ee;
   border-top-left-radius: 8px;
@@ -466,9 +466,75 @@ textarea {
 
 .projectModal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  /* margin: 15% auto; */
   margin-top: 0;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 850px;
+  position: relative;
+}
+
+.project-title {
+  color: #172B4D;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.project-description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #344563;
+  display: -webkit-box;
+  -webkit-line-clamp: 13;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0;
+}
+
+.projectModal-content .seeProjectContainer {
+  width: 90%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+}
+
+.projectModal-content .projectCategories {
+  margin: 0 ;
+  margin-top: 0;
+  justify-content: flex-start;
+  flex: 0;
+  margin-bottom: 1rem;
+}
+
+.close-projectModal {
+  color: #ffffff;
+  align-self: flex-end;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 5;
+  top: 30px;
+  right: 35px;
+}
+
+.close-projectModal:hover,
+.close-projectModal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.projectModal-content .projectImage {
+  flex: 0 0 25%;
+
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
   height: 100%;
 }
 
@@ -547,7 +613,7 @@ textarea {
     transform: scale(1.2);
   }
 
-  .project-card .projectImage {
+  .projectImage {
     flex: 1 0 45%;
   }
 
