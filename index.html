@@ -191,7 +191,7 @@
                 I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.
             </h3>
-            <form action="https://formspree.io/f/xknkbwva" method="POST" >
+            <form action="https://formspree.io/f/xknkbwva" novalidate method="POST" id="contactMe">
                 <fieldset>
                     <div class="nameInputs">
                         <input 
@@ -225,17 +225,18 @@
                     placeholder="Full name"
                     >
                     <input 
-                    type="email" 
+                    type="email"
                     name="_replyto" 
-                    oninvalid="setCustomValidity('Please enter a valid email')"
                     id="email" 
-                    required 
+                    required
+                    minlength="8"
                     placeholder="Email address"
-                    > 
-                    <textarea placeholder="Enter text here" required maxlength="500"></textarea>
+                    >
+                    <span class="error" aria-live="polite"></span>
+                    <textarea id="textArea" placeholder="Enter text here" required maxlength="500"></textarea>
                 </fieldset>
                 <div class="seeProjectContainer">
-                    <button class="seeProjectBtn" type="submit">Get in touch</button>
+                    <input class="seeProjectBtn" type="submit" value="Get in touch"></input>
                 </div>
             </form>
 

@@ -350,6 +350,7 @@ fieldset {
 
 .nameInputs {
   display: none;
+  visibility: hidden;
 }
 
 input {
@@ -365,11 +366,17 @@ input {
 input:focus:invalid {
   box-shadow: 0 0 5px 1px red;
   outline: none;
+  
 }
 
 input:focus:valid {
   box-shadow: 0 0 5px 1px green;
   outline: none;
+}
+
+input:invalid{
+  border-color: #900;
+  background-color: #FDD !important;
 }
 
 textarea {
@@ -537,6 +544,22 @@ textarea {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.error {
+  width  : 100%;
+  padding: 0;
+
+  font-size: 14px;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.error.active {
+  padding: 0.3em;
 }
 
 @media screen and (min-width: 992px) {
