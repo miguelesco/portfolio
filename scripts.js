@@ -1,24 +1,11 @@
-const sidebar = document.getElementById('sideBar');
-const hamburguerIcon = document.getElementById('hamburguerIcon');
-const closeBtn = document.getElementsByClassName('close-sidebar')[0];
-const navigationTag = document.getElementsByClassName('sidebarNavigation');
+import initSidebar from './modules/sidebar.js';
+import CardsGeneration from './modules/cardGeneration.js';
+import Popup from './modules/popup.js';
 
-const displaySidebar = () => {
-  sidebar.style.display = 'block';
+const init = () => {
+  initSidebar();
+  CardsGeneration();
+  Popup.init();
 };
 
-const closeSideBar = () => {
-  sidebar.style.display = 'none';
-};
-
-hamburguerIcon.addEventListener('click', displaySidebar);
-closeBtn.addEventListener('click', closeSideBar);
-Array.from(navigationTag).forEach((value) => {
-  value.addEventListener('click', closeSideBar);
-});
-
-window.onclick = function window(event) {
-  if (event.target === sidebar) {
-    sidebar.style.display = 'none';
-  }
-};
+init();

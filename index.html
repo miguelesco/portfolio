@@ -87,66 +87,34 @@
         </section>
 
         <section id="works">
-            <h2 class="blueTitleText">My Recent Works </h2>
-            <div class="divider"></div>
+        
+            <div id="projectModal" class="projectModal">
+                <!-- Modal content -->
+                <div class="projectModal-content">
+                    <span class="close-projectModal ">&times;</span>
+                    <div class="projectImage">
+                        <img class="image" src="/" alt="">
+                    </div>
+                    <p class="project-title"></p>
+                    <ul class="projectCategories" id="popup-categories">
+                        
+                    </ul>
+                    <article class="project-description">
+            
+                    </article>
+                    <div class="seeProjectContainer">
+                        <button class="seeProjectBtn" aria-label="live" type="button" id="seeLive">
+                            See Live
+                            <i class="fa fa-external-link"></i>
+                        </button>
+                        <button class="seeProjectBtn "  type="button" id="sourceCode">
+                            See Source
+                            <i class="fa fa-github"></i>
 
-            <ul class="grid-card-container">
-
-                <li class="project-card" >
-                    <div class="projectImage">
-                        
+                        </button>
                     </div>
-                    <article>
-                        <h3 class="cardTitle">Multi-Post Stories Gain+Glory</h3>
-                    </article>
-                    <ul class="projectCategories">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>Javascript</li>
-                        <li>html</li>
-                    </ul>
-                    <div class="seeProjectContainer">
-                        <button type="button" class="seeProjectBtn">See project</button>
-                    </div>
-                </li>
-                
-                <li class="project-card" >
-                    <div class="projectImage">
-                        
-                    </div>
-                    <article>
-                        <h3 class="cardTitle">Multi-Post Stories Gain+Glory</h3>
-                    </article>
-                    <ul class="projectCategories">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>Javascript</li>
-                        <li>html</li>
-                    </ul>
-                    <div class="seeProjectContainer">
-                        <button type="button" class="seeProjectBtn">See project</button>
-                    </div>
-                </li>
-                
-                <li class="project-card" >
-                    <div class="projectImage">
-                        
-                    </div>
-                    <article>
-                        <h3 class="cardTitle">Multi-Post Stories Gain+Glory</h3>
-                    </article>
-                    <ul class="projectCategories">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>Javascript</li>
-                        <li>html</li>
-                    </ul>
-                    <div class="seeProjectContainer">
-                        <button type="button" class="seeProjectBtn">See project</button>
-                    </div>
-                </li>
-                
-            </ul>
+                </div>
+            </div>
 
         </section>
 
@@ -307,6 +275,6 @@
         </footer>
 
     </main>
-    <script src="./scripts.js"></script>
+    <script type="module" src="./scripts.js"></script>
 </body>
 </html>
