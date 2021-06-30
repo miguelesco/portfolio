@@ -466,6 +466,7 @@ textarea {
 
 .projectModal-content {
   background-color: #fefefe;
+
   /* margin: 15% auto; */
   margin-top: 0;
   padding: 20px;
@@ -476,11 +477,12 @@ textarea {
 }
 
 .project-title {
-  color: #172B4D;
+  color: #172b4d;
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 .project-description p {
   font-weight: 400;
   font-size: 16px;
@@ -502,7 +504,7 @@ textarea {
 }
 
 .projectModal-content .projectCategories {
-  margin: 0 ;
+  margin: 0;
   margin-top: 0;
   justify-content: flex-start;
   flex: 0;
@@ -510,7 +512,7 @@ textarea {
 }
 
 .close-projectModal {
-  color: #ffffff;
+  color: #fff;
   align-self: flex-end;
   font-size: 28px;
   font-weight: bold;
@@ -529,7 +531,6 @@ textarea {
 
 .projectModal-content .projectImage {
   flex: 0 0 25%;
-
 }
 
 .image {
@@ -618,8 +619,39 @@ textarea {
   }
 
   .projectModal {
-    width: 60%;
-    height: 60%;
+    margin-top: 2rem;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .projectModal-content {
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .close-projectModal {
+    position: static;
+    align-self: flex-end;
+    background-color: #ebecf0;
+    color: #67798e;
+    margin-bottom: 10px;
+  }
+
+  .seeProjectContainer {
+    padding-left: 16.5px;
+  }
+
+  .projectModal-content .seeProjectContainer {
+    bottom: 21%;
+    justify-content: flex-end;
+  }
+
+  .projectModal-content .seeProjectContainer #seeLive {
+    margin-right: 20px;
   }
 
   .aboutmeDescription {
@@ -651,10 +683,6 @@ textarea {
 
   #contact form {
     flex: 50%;
-  }
-
-  .seeProjectContainer {
-    padding-left: 16.5px;
   }
 
   .fullname {
