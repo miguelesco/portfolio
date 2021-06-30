@@ -350,7 +350,6 @@ fieldset {
 
 .nameInputs {
   display: none;
-  visibility: hidden;
 }
 
 input {
@@ -363,14 +362,11 @@ input {
   border-radius: 4px;
 }
 
-input:invalid {
-  border-color: #900;
-  background-color: #fdd !important;
-}
-
 input:focus:invalid {
   box-shadow: 0 0 5px 1px red;
   outline: none;
+  border-color: #900;
+  background-color: #fdd !important;
 }
 
 input:focus:valid {
