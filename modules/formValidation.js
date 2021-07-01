@@ -25,7 +25,7 @@ function showError() {
 }
 
 const validateEmail = () => {
-  Storage.save('email', email.value);
+  Storage.set('email', email.value);
   if (email.validity.valid && email.value === email.value.toLowerCase()) {
     // display error
     emailError.textContent = '';

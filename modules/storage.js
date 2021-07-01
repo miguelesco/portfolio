@@ -13,7 +13,7 @@ const Storage = {
     email: '',
     message: '',
   },
-  save: (item, value) => {
+  set: (item, value) => {
     Storage.data[item] = value;
     window.localStorage.setItem('data', JSON.stringify(Storage.data));
   },
