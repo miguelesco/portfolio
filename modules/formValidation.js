@@ -1,11 +1,11 @@
 import Storage from './storage.js';
 
-const form = document.getElementById('contactMe');
-const email = document.getElementById('email');
-const firstname = document.getElementById('firstName');
-const lastname = document.getElementById('lastName');
-const fullname = document.getElementById('fullname');
-const textArea = document.getElementById('textArea');
+const form = document.getElementById('#contactMe');
+const email = document.getElementById('#email');
+const firstname = document.getElementById('#firstName');
+const lastname = document.getElementById('#lastName');
+const fullname = document.getElementById('#fullname');
+const textArea = document.getElementById('#textArea');
 const emailError = document.querySelector('#email + span.error');
 
 function showError() {

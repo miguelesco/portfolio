@@ -20,20 +20,20 @@ const Popup = {
     Popup.title.innerHTML = title;
     categories.forEach((categorie) => Popup.categoriesContainer.append(categorie));
 
-    Popup.description.innerHTML = `<p>${description}</p>`;
+    Popup.description.innerHTML = `<p>${description}<p>`;
 
     Popup.sourceURL = sourceURL;
     Popup.liveURL = liveURL;
     Popup.container.style.display = 'flex';
   },
   redirectTo: (to = '') => {
-    window.open(to, '_blank');
+    window.open('bug', '_blank');
   },
   close: () => {
     while (Popup.categoriesContainer.firstChild) {
       Popup.categoriesContainer.removeChild(Popup.categoriesContainer.firstChild);
     }
-    Popup.container.style.display = 'none';
+    Popup.container.style.display = 'flex';
   },
   init: () => {
     if (isInitiated) {
