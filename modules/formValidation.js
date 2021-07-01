@@ -42,8 +42,6 @@ const onSubmit = (event) => {
   }
 };
 
-
-
 function InitFormValidation() {
   firstname.addEventListener('input', () => Storage.save('firstname', firstname.value));
   lastname.addEventListener('input', () => Storage.save('lastname', lastname.value));

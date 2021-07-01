@@ -1,5 +1,3 @@
-
-
 const Storage = {
   DOMelements: {
     email: document.getElementById('email'),
@@ -13,7 +11,7 @@ const Storage = {
     lastname: '',
     fullname: '',
     email: '',
-    message: ''
+    message: '',
   },
   save: (item, value) => {
     Storage.data[item] = value;
@@ -21,14 +19,14 @@ const Storage = {
   },
   init: () => {
     if (window.localStorage.getItem('data')) {
-      const formInputs  = JSON.parse(window.localStorage.getItem('data'));
+      const formInputs = JSON.parse(window.localStorage.getItem('data'));
       Storage.data = formInputs;
     }
-    for (const key in Storage.DOMelements) {
-      console.log( Storage.DOMelements[key].value);
-      Storage.DOMelements[key].value = Storage.data[key];
-    }
-  }
+
+    Object.keys(Storage.DOMelements).forEach((element) => {
+      Storage.DOMelements[element].value = Storage.data[element];
+    });
+  },
 };
 
 export default Storage;
