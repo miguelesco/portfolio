@@ -43,10 +43,10 @@ const onSubmit = (event) => {
 };
 
 function InitFormValidation() {
-  firstname.addEventListener('input', () => Storage.save('firstname', firstname.value));
-  lastname.addEventListener('input', () => Storage.save('lastname', lastname.value));
-  fullname.addEventListener('input', () => Storage.save('fullname', fullname.value));
-  textArea.addEventListener('input', () => Storage.save('message', textArea.value));
+  firstname.addEventListener('input', () => Storage.set('firstname', firstname.value));
+  lastname.addEventListener('input', () => Storage.set('lastname', lastname.value));
+  fullname.addEventListener('input', () => Storage.set('fullname', fullname.value));
+  textArea.addEventListener('input', () => Storage.set('message', textArea.value));
   email.addEventListener('input', () => validateEmail());
   form.addEventListener('submit', (event) => onSubmit(event));
 }
