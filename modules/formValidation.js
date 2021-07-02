@@ -1,7 +1,12 @@
+import Storage from './storage.js';
+
 const form = document.getElementById('contactMe');
 const email = document.getElementById('email');
-const emailError = document.querySelector('#email + span.error');
+const firstname = document.getElementById('firstName');
+const lastname = document.getElementById('lastName');
+const fullname = document.getElementById('fullname');
 const textArea = document.getElementById('textArea');
+const emailError = document.querySelector('#email + span.error');
 
 function showError() {
   email.style.marginBottom = '0px';
@@ -20,6 +25,7 @@ function showError() {
 }
 
 const validateEmail = () => {
+  Storage.set('email', email.value);
   if (email.validity.valid && email.value === email.value.toLowerCase()) {
     // display error
     emailError.textContent = '';
@@ -37,6 +43,10 @@ const onSubmit = (event) => {
 };
 
 function InitFormValidation() {
+  firstname.addEventListener('input', () => Storage.set('firstname', firstname.value));
+  lastname.addEventListener('input', () => Storage.set('lastname', lastname.value));
+  fullname.addEventListener('input', () => Storage.set('fullname', fullname.value));
+  textArea.addEventListener('input', () => Storage.set('message', textArea.value));
   email.addEventListener('input', () => validateEmail());
   form.addEventListener('submit', (event) => onSubmit(event));
 }
